@@ -5,9 +5,11 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{618D1783-F8B4-4FB6-BF23-ADC4DFB94E5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{3D6E6124-FEE5-4D5A-AFCC-00FDFFA9F104}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{3D6E6124-FEE5-4D5A-AFCC-00FDFFA9F104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{6A7E5A99-568A-42BF-9416-9D3CE69E40CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{6A7E5A99-568A-42BF-9416-9D3CE69E40CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{52B400EF-E317-4C3C-902B-082C18FF0CD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,18 @@ Global
 		{6A7E5A99-568A-42BF-9416-9D3CE69E40CC}.Release|x64.Build.0 = Release|Any CPU
 		{6A7E5A99-568A-42BF-9416-9D3CE69E40CC}.Release|x86.ActiveCfg = Release|Any CPU
 		{6A7E5A99-568A-42BF-9416-9D3CE69E40CC}.Release|x86.Build.0 = Release|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Debug|x64.Build.0 = Debug|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Debug|x86.Build.0 = Debug|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Release|x64.ActiveCfg = Release|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Release|x64.Build.0 = Release|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Release|x86.ActiveCfg = Release|Any CPU
+		{52B400EF-E317-4C3C-902B-082C18FF0CD5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
