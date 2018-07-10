@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IdentityServer;
+using IdentityServer4.Quickstart.UI;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -22,7 +23,8 @@ namespace IdentityServer
                 .AddDeveloperSigningCredential()
                 .AddInMemoryApiResources(Config.GetApiResources())
                 .AddInMemoryClients(Config.GetClients())
-                .AddTestUsers(Config.GetUsers().ToList());
+                .AddTestUsers(TestUsers.Users)
+                .AddInMemoryIdentityResources(Config.GetIdentityResources());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
