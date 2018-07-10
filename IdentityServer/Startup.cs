@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IdentityServer;
+using IdentityServer4;
 using IdentityServer4.Quickstart.UI;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,6 +26,15 @@ namespace IdentityServer
                 .AddInMemoryClients(Config.GetClients())
                 .AddTestUsers(TestUsers.Users)
                 .AddInMemoryIdentityResources(Config.GetIdentityResources());
+
+            services.AddAuthentication()
+                .AddGoogle("Google", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ClientId = "896893559793-0hn2s134o1u69i96d011ige530ndpe7r.apps.googleusercontent.com";
+                    options.ClientSecret = "emRN1EEKBurj2Cj2ZZTtZsWp";
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
